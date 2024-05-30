@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/2882665ba0.js" crossorigin="anonymous"></script>
+    <title>XD Gaming</title>
+</head>
+<body class="bg-slate-500">
+    <header class="flex relative h-fit py-4 sticky w-full justify-between items-center top-0 backdrop-blur-2xl">
+        <h1 class="flex px-4 text-lg font-semibold">Sheharyar Zahid</h1>
+        <i id="bar" class="fa-solid fa-bars icon px-6 text-xl"></i>
+        <nav class="hidden">
+            <ul class="flex">
+                <li>Home</li>
+                <li>About</li>
+                <li>Skills</li>
+                <li>Projects</li>
+                <li>Contact me</li>
+                <li><button>Download CV</button></li>
+            </ul>
+        </nav>
+    </header>
+    <nav id="sideBar" class="flex absolute right-0 z-50 bg-black h-full top-0 bottom-0 w-1/2 text-white justify-center text-center items-center">
+        <ul class="flex flex-col">
+            <li>Home</li>
+            <li>About</li>
+            <li>Skills</li>
+            <li>Projects</li>
+            <li>Contact me</li>
+            <li><button>Download CV</button></li>
+        </ul>
+    </nav>
+    
+    <script>
+        var sideButton =document.getElementById("bar");
+        var sideBar =document.getElementById("sideBar");
+        sideButton.addEventListener("click",()=>{
+            sideBar.style.display="flex";
+        })
+    </script>
+</body>
+</html>
